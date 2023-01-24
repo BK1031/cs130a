@@ -1,11 +1,7 @@
 words = input().split()
-seen = set()
 
-for word in words:
-    if word in seen:
-        print("no")
-        exit()
-    else:
-        seen.add(word)
+if len(words) == len(set(words)):
+    print("yes")
+    exit()
 
-print("yes")
+print("no")
